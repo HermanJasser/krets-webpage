@@ -132,13 +132,24 @@ header {
 
 /* HERO */
 .hero {
-  padding: 100px 0 80px;
-  text-align: center;
+  padding: 80px 0;
   background: linear-gradient(160deg, var(--frost) 0%, var(--white) 60%);
+  overflow: hidden;
+}
+
+.hero-inner {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.hero-text {
+  flex: 1;
+  min-width: 0;
 }
 
 .hero h1 {
-  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-size: clamp(2rem, 4vw, 3.2rem);
   font-weight: 800;
   line-height: 1.15;
   letter-spacing: -1px;
@@ -147,10 +158,43 @@ header {
 }
 
 .hero-sub {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: var(--gray);
-  max-width: 580px;
-  margin: 0 auto 36px;
+  margin-bottom: 36px;
+}
+
+.hero-phone {
+  flex-shrink: 0;
+}
+
+.phone-frame {
+  width: 260px;
+  border-radius: 40px;
+  overflow: hidden;
+  box-shadow: 0 32px 80px rgba(91, 51, 230, 0.2), 0 8px 24px rgba(0,0,0,0.1);
+  border: 6px solid var(--ink);
+  background: var(--ink);
+}
+
+.phone-screen {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .hero-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .hero-sub {
+    margin: 0 auto 36px;
+  }
+
+  .phone-frame {
+    width: 220px;
+  }
 }
 
 /* BUTTON */
