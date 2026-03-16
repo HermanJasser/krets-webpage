@@ -1,0 +1,36 @@
+<svg width="512" height="320" viewBox="0 0 512 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pinGrad" x1="90" y1="40" x2="300" y2="260" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#9D7BFF"/>
+      <stop offset="100%" stop-color="#5B33E6"/>
+    </linearGradient>
+  </defs>
+
+  <!-- speed stripes -->
+  <rect x="22" y="86" width="62" height="10" rx="5" fill="#C4AEFF" opacity="0.95"/>
+  <rect x="6" y="110" width="74" height="10" rx="5" fill="#C4AEFF" opacity="0.85"/>
+  <rect x="28" y="134" width="50" height="10" rx="5" fill="#C4AEFF" opacity="0.75"/>
+
+  <!-- left pin -->
+  <g transform="translate(118 110) rotate(-12)">
+    <path d="M0 -62C-30 -62 -54 -38 -54 -8C-54 34 0 104 0 104C0 104 54 34 54 -8C54 -38 30 -62 0 -62Z" fill="url(#pinGrad)"/>
+    <circle cx="0" cy="-12" r="22" fill="#F2F0FF"/>
+  </g>
+
+  <!-- center pin -->
+  <g transform="translate(238 110) rotate(-2)">
+    <path d="M0 -84C-40 -84 -72 -52 -72 -12C-72 44 0 136 0 136C0 136 72 44 72 -12C72 -52 40 -84 0 -84Z" fill="url(#pinGrad)"/>
+    <circle cx="0" cy="-20" r="30" fill="#F2F0FF"/>
+  </g>
+
+  <!-- right pin -->
+  <g transform="translate(362 114) rotate(10)">
+    <path d="M0 -62C-30 -62 -54 -38 -54 -8C-54 34 0 104 0 104C0 104 54 34 54 -8C54 -38 30 -62 0 -62Z" fill="url(#pinGrad)"/>
+    <circle cx="0" cy="-12" r="22" fill="#F2F0FF"/>
+  </g>
+
+  <!-- soft ground shadows, still transparent around icon -->
+  <ellipse cx="103" cy="274" rx="32" ry="8" fill="#C4AEFF" opacity="0.42"/>
+  <ellipse cx="222" cy="292" rx="40" ry="10" fill="#C4AEFF" opacity="0.42"/>
+  <ellipse cx="345" cy="280" rx="32" ry="8" fill="#C4AEFF" opacity="0.42"/>
+</svg>

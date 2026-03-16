@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krets – Utvid din aktive krets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="container header-inner">
+      <img src="krets-logo-main.png" alt="Krets" class="logo-img" />
+      <nav>
+        <a href="kontakt.html" class="nav-link">Kontakt</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container">
+      <h1>Utvid din aktive krets</h1>
+      <p class="hero-sub">
+        Krets kobler deg med folk i nærheten som vil gjøre de samme aktivitetene som deg.
+        Enten du vil på tur, spille padel eller prøve noe nytt – finn noen å gjøre det med på minutter.
+      </p>
+      <a href="#signup" class="btn">Få tidlig tilgang</a>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="features">
+    <div class="container">
+      <h2>Slik fungerer det</h2>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          </div>
+          <h3>Opprett profil</h3>
+          <p>Legg inn interesser og ferdighetsnivå, så matcher vi deg med de rette menneskene.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C8.686 2 6 4.686 6 8c0 4.418 6 12 6 12s6-7.582 6-12c0-3.314-2.686-6-6-6z"/><circle cx="12" cy="8" r="2"/></svg>
+          </div>
+          <h3>Legg ut en aktivitet</h3>
+          <p>Padel i kveld, fjelltur til helgen eller spontan fotballkamp – legg det ut direkte i appen.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="7" cy="8" r="3"/><circle cx="17" cy="8" r="3"/><path d="M2 20c0-3 2.2-5 5-5h10c2.8 0 5 2 5 5"/></svg>
+          </div>
+          <h3>Finn noen å gjøre det med</h3>
+          <p>Andre i nærheten ser aktiviteten og kan bli med. Start aktiviteter eller bli med på andres.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIGNUP -->
+  <section class="signup" id="signup">
+    <div class="container">
+      <h2>Bli først ute</h2>
+      <p>Vi er under utvikling. Meld deg på lista så holder vi deg oppdatert.</p>
+      <form class="signup-form" id="signupForm">
+        <input type="email" id="emailInput" placeholder="din@epost.no" required />
+        <button type="submit" class="btn">Meld meg på</button>
+      </form>
+      <p class="form-feedback" id="formFeedback"></p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Krets. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
